@@ -1,128 +1,56 @@
-# WallpaperEngineManage
+> 🌐 语言 / Language: **[English](README_EN.md)** · 中文
 
-> 🇨🇳 中文 ｜ 🇺🇸 [English](#english)
+# Wallpaper Manager
 
-Wallpaper Engine 辅助管理工具，用于展示与管理 Steam 创意工坊中已取消订阅但仍在本地磁盘残留的壁纸文件。
-*A Wallpaper Engine auxiliary management tool for managing leftover wallpaper files on the local disk that remain after unsubscribing from the Steam Workshop.*
-
----
-
-## 🇨🇳 中文说明
-
-<details open>
-<summary><b>点击展开 / 收起中文说明</b></summary>
-
-### 简介
+> Wallpaper Engine 辅助管理工具，用于展示与管理 Steam 创意工坊中已取消订阅但仍在本地磁盘残留的壁纸文件。
 
 当你在 Steam 创意工坊**取消订阅**某个 Wallpaper Engine 壁纸后，Steam 有时并不会立即删除本地文件，这些壁纸会一直占用磁盘空间。本工具用于**扫描并列出这些「已取消订阅但仍残留在本地」的壁纸**，帮助你预览、筛选并清理它们，释放磁盘空间。
 
-### 功能特性
+## 功能特性
 
 - 📂 扫描本地磁盘，列出已取消订阅但仍在本地的壁纸
 - 👤 按 Steam 用户筛选（保存配置后自动加载用户列表）
 - 🔞 按年龄分级筛选：全部 / 大众级 / 成人（Adult）
 - 🔍 按标题搜索
-- 🖼️ 预览图 / 详情抽屉（ID、标题、大小、状态、订阅详情）
+- 🖼️ 预览图 / 详情抽屉（ID、标题、大小、评级、状态、订阅详情）
 - 📂 一键打开壁纸所在文件夹、复制路径
-- 🗑️ 批量删除选中或全部残留壁纸，释放空间
-- 📊 统计看板（已订阅 / 未订阅 / 可释放空间）
-- 🌐 简体中文 / English 双语界面（安装时选择语言）
+- 🗑️ 批量删除选中或全部残留壁纸，释放空间（不可撤销）
+- 📊 统计看板：已订阅容量 / 可释放空间 / R18 数量
+- 🌐 简体中文 / English 双语界面（应用内右上角切换）
 
-### 下载与安装
+## 下载与安装
 
 1. 前往 [Releases](https://github.com/Roco65V/WallpaperEngineManage/releases) 页面。
-2. 下载 `Wallpaper Manager Setup.exe`。
-3. 运行安装程序，按提示完成安装（安装过程中可选择界面语言）。
+2. 下载 `Wallpaper.Manager.Setup.exe`（GitHub 会把文件名中的空格显示为点）。
+3. 运行安装程序，按提示完成安装。
 
-### 使用方法
+## 使用前配置
 
-1. 启动应用，点击右上角 **⚙（设置）** 或导航栏 **设置**。
-2. 在设置中填写两个路径（首次使用必须填写，工具不会自动探测）：
-   - **Wallpaper Engine 内容路径**：Steam 创意工坊内容目录
-     - 例如：`D:\Steam\steamapps\workshop\content\431960`
-   - **Steam 用户数据路径**：Steam 的 `userdata` 目录
-     - 例如：`D:\Steam\userdata`
-3. （可选）设置「每页显示数量」。
-4. 点击 **💾 保存配置**。保存后工具会重新加载用户列表并扫描本地壁纸。
-5. 切换到 **未订阅** 标签页，浏览所有残留壁纸；可使用顶部搜索框、用户筛选、分级筛选缩小范围。
-6. 点击卡片查看预览与详情；勾选后点击 **删除选中** 或 **删除全部** 清理文件、释放空间。
+首次打开需在右上角 **⚙（设置）** 中填写两个路径（工具**不会**自动探测，需手动填写）。配置保存在 `%APPDATA%\Wallpaper Manager\config.json`：
+
+1. **Wallpaper Engine 内容路径**：Steam 创意工坊内容目录
+   - 例如：`D:\Steam\steamapps\workshop\content\431960`
+2. **Steam 用户数据路径**：Steam 的 `userdata` 目录
+   - 例如：`D:\Steam\userdata`
+
+> 这两个路径随各人 Steam 安装位置不同而变化，请按实际情况填写，然后点击 **💾 保存配置**。保存后工具会重新加载用户列表并扫描本地壁纸。
+
+## 使用方法
+
+1. 启动应用，默认进入 **未订阅** 列表，展示磁盘上残留的壁纸文件。
+2. 使用顶部筛选栏按 **用户** 或 **分级** 过滤；搜索框可按标题搜索。
+3. 勾选需要清理的壁纸，点击 **删除选中**；或点击 **删除全部** 一次清理所有残留。
    - ⚠️ 删除操作**不可撤销**，请确认后再执行。
+4. 切换到 **已订阅** 查看仍在订阅的壁纸；切换到 **统计看板** 查看容量占用（已订阅容量 / 可释放空间 / R18 数量）。
+5. 点击任意壁纸卡片可查看详情、预览、复制路径、打开文件夹或删除。
+6. 右上角可切换 中文 / English 界面语言（保存在配置中）。
 
-### 数据存储
+## 工作原理（简述）
 
-- 配置保存在应用用户数据目录的 `config.json`。
-- 安装器语言保存在 `install-locale.json`，每次启动以安装时选择的语言为准。
+- 扫描「Wallpaper Engine 内容路径」下每个壁纸文件夹（以 `publishedfileid` 命名）。
+- 读取每个 Steam 用户在 `userdata\<id>\ugc\431960_subscriptions.vdf` 中的订阅记录。
+- 磁盘上存在、但任何用户都未「活跃订阅」的壁纸，即判定为 **未订阅（残留）**，可安全删除。
 
-### 从源码构建（可选）
+## 许可证
 
-```bash
-npm install
-npm run build
-# 产物位于 release/Wallpaper Manager Setup.exe
-```
-
-</details>
-
----
-
-## 🇺🇸 English
-
-<details>
-<summary><b>Click to expand / collapse English</b></summary>
-
-### Overview
-
-When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop, Steam does not always delete the local files immediately — they keep occupying disk space. This tool **scans and lists those wallpapers that are unsubscribed but still left on your local disk**, letting you preview, filter, and clean them up to free space.
-
-### Features
-
-- 📂 Scan local disk and list wallpapers that are unsubscribed but still present locally
-- 👤 Filter by Steam user (user list is loaded automatically after saving config)
-- 🔞 Filter by age rating: All / General / Adult
-- 🔍 Search by title
-- 🖼️ Preview & detail drawer (ID, title, size, status, subscription details)
-- 📂 Open the wallpaper folder / copy its path with one click
-- 🗑️ Batch delete selected or all leftover wallpapers to reclaim space
-- 📊 Statistics dashboard (subscribed / unsubscribed / releasable space)
-- 🌐 Simplified Chinese / English UI (choose language at install time)
-
-### Download & Install
-
-1. Go to the [Releases](https://github.com/Roco65V/WallpaperEngineManage/releases) page.
-2. Download `Wallpaper Manager Setup.exe`.
-3. Run the installer and follow the prompts (you can choose the UI language during installation).
-
-### How to use
-
-1. Launch the app and open **⚙ (Settings)** at the top-right, or the **Settings** nav item.
-2. Fill in the two paths (required on first use; the tool does **not** auto-detect them):
-   - **Wallpaper Engine content path**: the Steam Workshop content directory
-     - e.g. `D:\Steam\steamapps\workshop\content\431960`
-   - **Steam userdata path**: the Steam `userdata` directory
-     - e.g. `D:\Steam\userdata`
-3. (Optional) Set **items per page**.
-4. Click **💾 Save settings**. The tool reloads the user list and scans local wallpapers.
-5. Switch to the **Unsubscribed** tab to browse all leftover wallpapers; use the search box, user filter, and rating filter at the top to narrow down.
-6. Click a card to view preview & details; select items and click **Delete selected** or **Delete all** to clean up files and free space.
-   - ⚠️ Deletion is **irreversible** — please confirm before proceeding.
-
-### Data storage
-
-- Config is saved to `config.json` in the app's user data directory.
-- The installer language is saved to `install-locale.json`; the app starts in the language chosen at install time.
-
-### Build from source (optional)
-
-```bash
-npm install
-npm run build
-# Output: release/Wallpaper Manager Setup.exe
-```
-
-</details>
-
----
-
-## 📄 License
-
-See [LICENSE](LICENSE).
+本项目以 [LICENSE](LICENSE) 中的条款分发，**源代码不公开**。
