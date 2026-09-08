@@ -6,7 +6,7 @@
 
 当你在 Steam 创意工坊**取消订阅**某个 Wallpaper Engine 壁纸后，Steam 有时并不会立即删除本地文件，这些壁纸会一直占用磁盘空间。本工具用于**扫描并列出这些「已取消订阅但仍残留在本地」的壁纸**，帮助你预览、筛选并清理它们，释放磁盘空间。
 
-<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/8b153fab-3b8f-49f8-aa3c-f626e92386a7" />
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/7afca248-2567-46ed-ac2e-5177481f63da" />
 
 <img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/e621637b-c8c6-4dab-b32d-d3ea706a3a39" />
 
