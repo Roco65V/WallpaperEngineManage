@@ -6,7 +6,7 @@
 
 When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop, Steam does not always delete the local files immediately — they keep occupying disk space. This tool **scans and lists those wallpapers that are unsubscribed but still left on your local disk**, letting you preview, filter, and clean them up to free space.
 
-<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/5573dd8c-804a-45ad-85c9-29deab4ecda2" />
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/92e28f4b-020f-418d-b2a9-13b04b3b8b36" />
 
 <img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/f0ec80ca-1aa7-47e2-8858-2071cb37d8e2" />
 
