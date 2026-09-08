@@ -8,6 +8,8 @@ When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop
 
 <img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/5573dd8c-804a-45ad-85c9-29deab4ecda2" />
 
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/f0ec80ca-1aa7-47e2-8858-2071cb37d8e2" />
+
 ## Features
 
 - 📂 Scan local disk and list wallpapers that are unsubscribed but still present locally
