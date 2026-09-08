@@ -15,6 +15,7 @@ When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop
 - 🔞 Filter by age rating: All / General / Adult
 - 🔍 Search by title
 - 🖼️ Preview & detail drawer (ID, title, size, rating, status, subscription details)
+- ▶ Video files can be played directly using the local player.
 - 📂 Open the wallpaper folder / copy its path with one click
 - 🗑️ Batch delete selected or all leftover wallpapers to reclaim space (irreversible)
 - 📊 Statistics dashboard: subscribed size / releasable space / R18 count
@@ -28,7 +29,7 @@ When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop
 
 ## Configuration before first use
 
-On first launch, open **⚙ (Settings)** at the top-right and fill in two paths (the tool does **not** auto-detect them). Config is saved to `%APPDATA%\Wallpaper Manager\config.json`:
+On first launch, open **⚙ (Settings)** at the top-right and fill in two paths. Config is saved to `%APPDATA%\Wallpaper Manager\config.json`:
 
 1. **Wallpaper Engine content path**: the Steam Workshop content directory
    - e.g. `D:\Steam\steamapps\workshop\content\431960`
