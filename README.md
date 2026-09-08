@@ -8,6 +8,9 @@
 
 <img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/8b153fab-3b8f-49f8-aa3c-f626e92386a7" />
 
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/e621637b-c8c6-4dab-b32d-d3ea706a3a39" />
+
+
 ## 功能特性
 
 - 📂 扫描本地磁盘，列出已取消订阅但仍在本地的壁纸
