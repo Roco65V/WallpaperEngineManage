@@ -19,6 +19,7 @@ When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop
 - 📂 Open the wallpaper folder / copy its path with one click
 - 🗑️ Batch delete selected or all leftover wallpapers to reclaim space (irreversible)
 - 📊 Statistics dashboard: subscribed size / releasable space / R18 count
+- 🔄 Switch Steam account: go offline / delete the old account's subscription file / go back online to avoid old subscriptions being auto-restored
 - 🌐 Simplified Chinese / English UI (toggle at the top-right in the app)
 
 ## Download & Install
@@ -47,6 +48,17 @@ On first launch, open **⚙ (Settings)** at the top-right and fill in two paths.
 4. Switch to **Subscribed** to view still-subscribed wallpapers; switch to **Statistics** to see disk usage (subscribed size / releasable space / R18 count).
 5. Click any wallpaper card to view details, preview, copy path, open folder, or delete.
 6. Toggle 中文 / English from the top-right (persisted in config).
+
+## Switch Steam Account
+
+The "Switch Account" item in the sidebar (below "Statistics") lets you switch Steam accounts and clear a previous account's leftover subscriptions:
+
+1. Set the "WallPaper Engine install path" (`...\steamapps\common\wallpaper_engine\bin`, or inherited from Settings) to detect Wallpaper Engine's online status.
+2. Use the switch to take Wallpaper Engine **online / offline** (offline = create `nosteam.txt`; online = remove it).
+3. Pick a target Steam user from the "Select user" dropdown and view the status of its subscription file (`431960_subscriptions.vdf`).
+4. Click **Delete subscription file** to remove that account's subscription record (`userdata\<id>\ugc\431960_subscriptions.vdf`).
+
+> Recommended flow: **go offline first → delete the old account's subscription file → go back online**. This prevents the old account's subscriptions from being auto-downloaded or restored after reconnecting. Confirmation is required before deletion.
 
 ## How it works (brief)
 
