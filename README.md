@@ -6,9 +6,11 @@
 
 当你在 Steam 创意工坊**取消订阅**某个 Wallpaper Engine 壁纸后，Steam 有时并不会立即删除本地文件，这些壁纸会一直占用磁盘空间。本工具用于**扫描并列出这些「已取消订阅但仍残留在本地」的壁纸**，帮助你预览、筛选并清理它们，释放磁盘空间。
 
-<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/7afca248-2567-46ed-ac2e-5177481f63da" />
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/3c91ef5e-c778-4454-85d8-d1747f6213b3" />
 
-<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/e621637b-c8c6-4dab-b32d-d3ea706a3a39" />
+
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/c3b9459e-d590-474c-848a-e5f6a651ff68" />
+
 
 
 ## 功能特性
@@ -28,25 +30,28 @@
 ## 下载与安装
 
 1. 前往 [Releases](https://github.com/Roco65V/WallpaperEngineManage/releases) 页面。
-2. 下载 `Wallpaper.Manager.Setup.exe`（GitHub 会把文件名中的空格显示为点）。
+2. 下载 `Wallpaper.Manager.Setup.exe`。
 3. 运行安装程序，按提示完成安装。
 
 ## 使用前配置
 
-首次打开需在右上角 **⚙（设置）** 中填写两个路径。配置保存在 `%APPDATA%\Wallpaper Manager\config.json`：
-
-1. **Wallpaper Engine 内容路径**：Steam 创意工坊内容目录
+1. **Steam 安装目录**：
+   - 例如：`D:\Steam`
+在无法正常识别的时候 手动填入以下路径
+2. **Wallpaper Engine 内容路径**：创意工坊路径
    - 例如：`D:\Steam\steamapps\workshop\content\431960`
-2. **Steam 用户数据路径**：Steam 的 `userdata` 目录
+3. **Steam 用户数据路径**：Steam 的 `userdata` 目录
    - 例如：`D:\Steam\userdata`
+4. **Wallpaper Engine 安装路径**：Wallpaper安装路径下的 `bin` 目录
+   - 例如：`D:\Steam\steamapps\common\wallpaper_engine\bin`
 
-> 这两个路径随各人 Steam 安装位置不同而变化，请按实际情况填写，然后点击 **💾 保存配置**。保存后工具会重新加载用户列表并扫描本地壁纸。
+> 路径随各人 Steam 安装位置不同而变化，请按实际情况填写，然后点击 **💾 保存配置**。保存后工具会重新加载用户列表并扫描本地壁纸。
 
 ## 使用方法
 
-1. 启动应用，默认进入 **未订阅** 列表，展示磁盘上残留的壁纸文件。
+1. 启动应用，展示磁盘上的壁纸文件，视频文件可直接点击卡片播放按钮调用系统默认播放器进行视频播放。
 2. 使用顶部筛选栏按 **用户** 或 **分级** 过滤；搜索框可按标题搜索。
-3. 勾选需要清理的壁纸，点击 **删除选中**；或点击 **删除全部** 一次清理所有残留。
+3. 未订阅壁纸勾选需要清理的壁纸，点击 **删除选中**；或点击 **删除全部** 一次清理所有残留。(已订阅请前往Wallpaper取消订阅)
    - ⚠️ 删除操作**不可撤销**，请确认后再执行。
 4. 切换到 **已订阅** 查看仍在订阅的壁纸；切换到 **统计看板** 查看容量占用（已订阅容量 / 可释放空间 / R18 数量）。
 5. 点击任意壁纸卡片可查看详情、预览、复制路径、打开文件夹或删除。
@@ -58,8 +63,8 @@
 
 同一台电脑若登录过多个 Steam 账号，切换账号后 Wallpaper Engine 会按新账号的订阅记录自动下载其全部壁纸，导致本地磁盘被不同账号的壁纸占满。本模块通过「断网 → 清理订阅 → 重新联网」规避：
 
-1. 在「WallPaper Engine 安装路径」填写 `...\steamapps\common\wallpaper_engine\bin`（也可从设置继承），用于识别 Wallpaper Engine 的联网状态。
-3. 在「选择账号」下拉里选择要清理的旧账号，查看其订阅文件状态。
+1. 切换账号前先断网
+3. 切换回来后，在「选择账号」下拉里选择要清理的旧账号，查看其订阅文件状态。
 4. 点击 **删除订阅文件** 移除该账号的订阅记录删除前会要求确认。
 5. 清理完成后，再把开关切回**联网**。
 
