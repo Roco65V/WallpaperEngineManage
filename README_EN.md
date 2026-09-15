@@ -6,10 +6,9 @@
 
 When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop, Steam does not always delete the local files immediately — they keep occupying disk space. This tool **scans and lists those wallpapers that are unsubscribed but still left on your local disk**, letting you preview, filter, and clean them up to free space.
 
-<img width="2160" height="1350" alt="screenshot" src="https://github.com/user-attachments/assets/3c91ef5e-c778-4454-85d8-d1747f6213b3" />
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/c488d5a1-6e9e-4ee5-91c4-1651cde388b5" />
 
-
-<img width="2160" height="1350" alt="screenshot" src="https://github.com/user-attachments/assets/c3b9459e-d590-474c-848a-e5f6a651ff68" />
+<img width="2160" height="1350" alt="图片" src="https://github.com/user-attachments/assets/bff5f973-4136-4bf7-8dd6-f37279f37558" />
 
 
 ## Features
@@ -29,7 +28,7 @@ When you **unsubscribe** from a Wallpaper Engine wallpaper on the Steam Workshop
 ## Download & Install
 
 1. Go to the [Releases](https://github.com/Roco65V/WallpaperEngineManage/releases) page.
-2. Download `Wallpaper.Manager.Setup.exe` (GitHub displays spaces in the file name as dots).
+2. Download `Wallpaper.Manager.Setup.exe`.
 3. Run the installer and follow the prompts.
 
 ## Configuration before first use
